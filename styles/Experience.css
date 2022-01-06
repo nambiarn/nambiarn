@@ -1,0 +1,7 @@
+.main-section__exp {
+    padding: 0.08rem 0 0 0;
+}
+
+.main-section__exp:first-child {
+    padding: 0;
+}

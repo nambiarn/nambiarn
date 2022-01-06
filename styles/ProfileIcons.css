@@ -1,0 +1,17 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.scale {
+    color: inherit;
+    transition: transform .2s;
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}

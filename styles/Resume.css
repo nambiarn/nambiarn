@@ -1,0 +1,97 @@
+.outline {
+    margin: 2.5rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #000;
+}
+
+.border-black-2p {
+    border: 2px solid #000
+}
+
+.margin-right-xsm {
+    margin-right: 0.3rem;
+}
+
+.width-md {
+    width: 10rem;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+}
+
+.border-radius-50 {
+    border-radius: 50%
+}
+
+.letter-spacing {
+    letter-spacing: 0.08rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.margin-auto {
+    display: flex;
+    margin: auto;
+}
+
+.icon-h-w {
+    height: 25px;
+    width: 25px;
+}
+
+.text-dec-none {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-space-around {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+.flex {
+    display: flex;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
