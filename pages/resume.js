@@ -5,6 +5,7 @@ import profilePic from '../public/images/nn-pp.jpeg';
 import Experience from "../components/Experience";
 import ProfileIcons from "../components/ProfileIcons";
 import { commitDate } from '../generatedGitInfo.json';
+import Image from 'next/image';
 
 export default function Resume() {
     const [name] = useState("Nikhil Nambiar");
@@ -33,7 +34,7 @@ export default function Resume() {
     return (
         <main className="outline">
             <p className="flex flex-end italic">Last Updated: {lastUpdatedDate}</p>
-            <img className="border-radius-50 margin-auto" src={profilePic} alt="Profile" width="120" height="120"/>
+            <Image className="border-radius-50 margin-auto" src={profilePic} alt="Profile" width="120" height="120"/>
             <h2 className="flex-center margin-bottom-0">{name}</h2>
             <ProfileIcons/> 
             <h3 className="font-weight-400 letter-spacing flex-center">{

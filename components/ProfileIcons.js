@@ -6,7 +6,8 @@ import twitterIcon from '../public/images/twitter-icon.svg';
 import linkedinIcon from '../public/images/linkedin-icon.svg';
 import { LocationMarkerIcon } from '@heroicons/react/solid';
 import { MailIcon } from '@heroicons/react/outline';
-// import './ProfileIcons.css'
+import Image from 'next/image';
+// import styles from '../styles/ProfileIcons.css';
 
 export default function ProfileIcons() {
     const [currentUserName] = useState("nambiarn")
@@ -27,17 +28,17 @@ export default function ProfileIcons() {
             <section className="flex-center">
                 <a className="" href={getUrl(github, currentUserName)}
                     target="_blank" rel="noreferrer">
-                    <img className="scale border-radius-50 border-black-2p margin-right-xsm" src={gitIcon}
+                    <Image className="scale border-radius-50 border-black-2p margin-right-xsm" src={gitIcon}
                         alt="Github link" width="20" height="20" />
                 </a>
                 <a className="scale font-weight-400 flex-align-center" href={getUrl(twitter, currentTwitterName)}
                     target="_blank" rel="noreferrer">
-                    <img className="margin-right-xsm" src={twitterIcon}
+                    <Image className="margin-right-xsm" src={twitterIcon}
                         alt="Twitter link" width="30" height="30" />
                 </a>
                 <a className="scale font-weight-400 flex-align-center" href={getUrl(linkedin, currentLinkedInName)}
                     target="_blank" rel="noreferrer">
-                    <img className="margin-right-xsm" src={linkedinIcon}
+                    <Image className="margin-right-xsm" src={linkedinIcon}
                         alt="Linkedin link" width="30" height="30" />
                 </a>
                 <a className="scale font-weight-400 flex-align-center" href={`mailto:${email}`}
