@@ -1,5 +1,10 @@
+.section-area {
+    margin-left: 1.5rem;
+}
+
 .outline {
-    margin: 2.5rem;
+    border-left: 1.5rem solid;
+    margin: -1rem 1.5rem;
 }
 
 .border-bottom {
@@ -94,4 +99,12 @@
 .flex-col {
     display: flex;
     flex-direction: column;
+}
+
+.padding-top-sm {
+    padding-top: 1.2rem;
+}
+
+.font-size-lg {
+    font-size: 2rem;
 }
