@@ -11,6 +11,7 @@ export default function Resume() {
     const [firstName] = useState("Nikhil");
     const [lastName] = useState("Nambiar")
     const [currentGigs, setCurrentGigs] = useState([]);
+    const [title, setTitle] = useState("Senior Consultant");
     const [lastUpdatedDate] = useState(commitDate)
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -35,12 +36,13 @@ export default function Resume() {
     return (
         <main className="outline">
             <section className="section-area">
-                <p className="flex flex-end italic padding-top-sm">Last Updated: {lastUpdatedDate}</p>
+                <p className="flex flex-end italic padding-top-md">Last Updated: {lastUpdatedDate}</p>
                 <Image className="border-radius-50 margin-auto" src={profilePic} alt="Profile" width="120" height="120" />
                 <div aria-label="name">
-                    <div aria-label="first name" className="font-size-lg">{firstName}</div>
-                    <div aria-label="last name" className="font-size-lg name">{lastName}</div>
+                    <div aria-label="first name" className="font-size-lg font-weight-600">{firstName}</div>
+                    <div aria-label="last name" className="font-size-lg name font-weight-600">{lastName}</div>
                 </div>
+                <div className="padding-top-sm font-weight-600">{title}</div>
                 <ProfileIcons />
                 <h3 className="font-weight-400 letter-spacing flex-center">{
                     currentGigs.map(currentGig => !isSmallScreen ?

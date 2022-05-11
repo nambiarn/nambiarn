@@ -27,6 +27,10 @@
     font-weight: 400;
 }
 
+.font-weight-600 {
+    font-weight: 600;
+}
+
 .border-radius-50 {
     border-radius: 50%
 }
@@ -49,7 +53,6 @@
 .flex-align-center {
     display: flex;
     align-items: center;
-    justify-content: center; 
 }
 
 .margin-auto {
@@ -101,10 +104,14 @@
     flex-direction: column;
 }
 
-.padding-top-sm {
+.padding-top-md {
     padding-top: 1.2rem;
 }
 
 .font-size-lg {
-    font-size: 2rem;
+    font-size: 2.5rem;
+}
+
+.padding-top-sm {
+    margin-top: 1rem;
 }

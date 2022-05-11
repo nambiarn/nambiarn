@@ -18,14 +18,14 @@ export default function ProfileIcons() {
 
     return (
         <section>
-            <section className="flex-center">
+            <section>
                 <h3>
-                    <a className="text-dec-none font-weight-400" target="_blank"
+                    <a className="text-dec-none font-weight-400 font-size-sm" target="_blank"
                         rel="noreferrer" href={getUrl(maps, currentCity)}>
-                        <LocationMarkerIcon className="icon-h-w text-blue-500" />{currentCity}</a>
+                        <LocationMarkerIcon className="icon-h-w text-blue-500 marker" />{currentCity}</a>
                 </h3>
             </section>
-            <section className="flex-center">
+            <section className="flex flex-align-center">
                 <a className="" href={getUrl(github, currentUserName)}
                     target="_blank" rel="noreferrer">
                     <Image className="scale border-radius-50 border-black-2p margin-right-xsm" src={gitIcon}
