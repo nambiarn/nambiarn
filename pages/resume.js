@@ -12,6 +12,12 @@ export default function Resume() {
     const [lastName] = useState("Nambiar")
     const [currentGigs, setCurrentGigs] = useState([]);
     const [title, setTitle] = useState("Senior Consultant");
+    const [degree, setDegree] = useState([{ institution: "Univeristy of Texas, Dallas", 
+                                            degree: "MS, Management & Information Systems"
+                                        }, 
+                                        { institution: "Univeristy of Mumbai", 
+                                            degree: "Bachelors of Engineering"
+                                        },])
     const [lastUpdatedDate] = useState(commitDate)
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -44,6 +50,15 @@ export default function Resume() {
                 </div>
                 <div className="padding-top-sm font-weight-600">{title}</div>
                 <ProfileIcons />
+                <div className="padding-top-sm font-weight-600 text-uppercase">Education</div>
+                <div>{
+                    degree.map((el, index) => {
+                        return <p key={index}>
+                                <p>{el.degree}</p>
+                                <p>{el.institution}</p>
+                               </p>
+                    })
+                    }</div>
                 <h3 className="font-weight-400 letter-spacing flex-center">{
                     currentGigs.map(currentGig => !isSmallScreen ?
                         <span key={currentGig.id}> {currentGig.title} at {currentGig.company}
@@ -58,14 +73,6 @@ export default function Resume() {
                             return <Experience key={gig.id} title={gig.title} company={gig.company}
                                 startDate={gig.startDate} endDate={gig.endDate} isCurrent={gig.isCurrent} />
                         })
-                    }
-                </section>
-                <section className="">
-                    <h2 className="border-bottom width-md">Education</h2>
-                    {
-                        experience.map((el) =>
-                            <Experience key={el.id} title={el.title} company={el.company}
-                                isCurrent={el.isCurrent} />)
                     }
                 </section>
             </section>

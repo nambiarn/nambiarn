@@ -115,3 +115,7 @@
 .padding-top-sm {
     margin-top: 1rem;
 }
+
+.text-uppercase {
+ text-transform: uppercase;
+}
