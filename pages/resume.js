@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { experience } from "../data/experience";
+import { education } from "../data/education";
 import { addPipe, getCurrentGigs } from "../services/resumeService";
 import profilePic from '../public/images/nn-pp.jpeg';
 import Experience from "../components/Experience";
@@ -12,12 +13,6 @@ export default function Resume() {
     const [lastName] = useState("Nambiar")
     const [currentGigs, setCurrentGigs] = useState([]);
     const [title, setTitle] = useState("Senior Consultant");
-    const [degree, setDegree] = useState([{ institution: "Univeristy of Texas, Dallas", 
-                                            degree: "MS, Management & Information Systems"
-                                        }, 
-                                        { institution: "Univeristy of Mumbai", 
-                                            degree: "Bachelors of Engineering"
-                                        },])
     const [lastUpdatedDate] = useState(commitDate)
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -52,10 +47,10 @@ export default function Resume() {
                 <ProfileIcons />
                 <div className="padding-top-sm font-weight-600 text-uppercase">Education</div>
                 <div>{
-                    degree.map((el, index) => {
-                        return <p key={index}>
-                                <p>{el.degree}</p>
-                                <p>{el.institution}</p>
+                    education.map((el, index) => {
+                        return <p key={el.id}>
+                                <p className="font-weight-600">{el.degree}</p>
+                                <div className="name-font-size-sm">{el.institution} | {el.endYear}</div>
                                </p>
                     })
                     }</div>
