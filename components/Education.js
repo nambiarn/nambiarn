@@ -6,15 +6,15 @@ export default function Education({ education }) {
     return (
         <section>
             <div className="padding-top-sm font-weight-600 text-uppercase">Education</div>
-            <div>{
+            <span>{
                 education.map(el => {
                     return <p key={el.id}>
                         <p className="font-weight-600">{el.degree}</p>
-                        <div className="name-font-size-sm">{el.institution} | {el.endYear}</div>
+                        <p className="name-font-size-sm">{el.institution} | {el.endYear}</p>
                     </p>
                 })
             }
-            </div>
+            </span>
         </section>
     )
 }
