@@ -5,3 +5,15 @@
 .main-section__exp:first-child {
     padding: 0;
 }
+
+.margin-left-sm {
+    margin-left: 1rem;
+}
+
+.font-size-sm-2 {
+    font-size: 0.9rem;
+}
+
+.margin-0 {
+    margin: 0
+}

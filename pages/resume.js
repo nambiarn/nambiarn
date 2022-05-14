@@ -49,24 +49,24 @@ export default function Resume() {
                     <ProfileIcons />
                     <Education aria-label="Education credentials" education={education}></Education>
                 </section>
-                <p>
-                    <h3 className="font-weight-400 letter-spacing flex-center">{
+                <span className="section-area">
+                    {/* <h3 className="font-weight-400 letter-spacing flex-center">{
                         currentGigs.map(currentGig => !isSmallScreen ?
                             <span key={currentGig.id}> {currentGig.title} at {currentGig.company}
                                 {addPipe(currentGigs, currentGig)} </span> :
                             <p className="flex-col" key={currentGig.id}> {currentGig.title} at {currentGig.company}</p>
                         )
-                    }</h3>
-                    <h2 className="border-bottom width-md">Experience</h2>
+                    }</h3> */}
+                    <h3 className="width-md text-uppercase margin-top-minus-1">Experience</h3>
                     <section>
                         {
                             experience.map((gig) => {
                                 return <Experience key={gig.id} title={gig.title} company={gig.company}
-                                    startDate={gig.startDate} endDate={gig.endDate} isCurrent={gig.isCurrent} />
+                                    startDate={gig.startDate} endDate={gig.endDate} isCurrent={gig.isCurrent} content={gig.content} />
                             })
                         }
                     </section>
-                    </p>
+                    </span>
             </section>
         </main>
     )

@@ -1,6 +1,5 @@
 .section-area {
     margin-left: 1.5rem;
-    background: map-get(red)
 }
 
 .outline {
@@ -94,6 +93,10 @@
 
 .margin-bottom-0 {
     margin-bottom: 0;
+}
+
+.margin-top-minus-1 {
+    margin-top: -1rem;
 }
 
 .italic {

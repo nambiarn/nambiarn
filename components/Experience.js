@@ -2,15 +2,20 @@ import PropTypes from 'prop-types';
 import { getMonthAndYearFromDate, dateDiff } from '../services/utilService';
 // import './Experience.css'
 
-export default function Experience({title, company, isCurrent, startDate, endDate }) {
+export default function Experience({key, title, content, company, isCurrent, startDate, endDate }) {
 
     return (
         <section className="main-section__exp">
-            <h3>{title}</h3>
-            <p>{company}</p>
-            <p>{getMonthAndYearFromDate(startDate)} - {endDate ? getMonthAndYearFromDate(endDate) : "Present"}</p>
-            <p>{dateDiff(startDate, endDate)}</p>
+            <h4 className="margin-0">{title}</h4>
+            <p className="margin-0">{company}</p>
+            <span className="name-font-size-sm">{getMonthAndYearFromDate(startDate)} - {endDate ? getMonthAndYearFromDate(endDate) : "Present"}</span>
+            <span className="margin-left-sm name-font-size-sm">{dateDiff(startDate, endDate)} </span>
             <p>{isCurrent}</p>
+            <ul className="font-size-sm-2">
+                { content && content.map(detail => {
+                        return <li key={key}>{detail}</li>
+                }) }
+            </ul>
         </section>
     )
 }
