@@ -50,13 +50,6 @@ export default function Resume() {
                     <Education aria-label="Education credentials" education={education}></Education>
                 </section>
                 <span className="section-area">
-                    {/* <h3 className="font-weight-400 letter-spacing flex-center">{
-                        currentGigs.map(currentGig => !isSmallScreen ?
-                            <span key={currentGig.id}> {currentGig.title} at {currentGig.company}
-                                {addPipe(currentGigs, currentGig)} </span> :
-                            <p className="flex-col" key={currentGig.id}> {currentGig.title} at {currentGig.company}</p>
-                        )
-                    }</h3> */}
                     <h3 className="width-md text-uppercase margin-top-minus-1">Experience</h3>
                     <section>
                         {
