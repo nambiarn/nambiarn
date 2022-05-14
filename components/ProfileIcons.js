@@ -43,7 +43,7 @@ export default function ProfileIcons() {
                 </a>
                 <a className="scale font-weight-400 flex-align-center" href={`mailto:${email}`}
                     target="_blank" rel="noreferrer">
-                    <MailIcon className="icon-h-w text-blue-500"/>
+                    <MailIcon alt="Mail icon" className="icon-h-w text-blue-500"/>
                 </a>
             </section>
         </section>

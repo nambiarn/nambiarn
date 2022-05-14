@@ -4,6 +4,7 @@ import { education } from "../data/education";
 import { addPipe, getCurrentGigs } from "../services/resumeService";
 import profilePic from '../public/images/nn-pp.jpeg';
 import Experience from "../components/Experience";
+import Education from "../components/Education";
 import ProfileIcons from "../components/ProfileIcons";
 import { commitDate } from '../generatedGitInfo.json';
 import Image from 'next/image';
@@ -46,14 +47,7 @@ export default function Resume() {
                 <div className="padding-top-sm font-weight-600">{title}</div>
                 <ProfileIcons />
                 <div className="padding-top-sm font-weight-600 text-uppercase">Education</div>
-                <div>{
-                    education.map((el, index) => {
-                        return <p key={el.id}>
-                                <p className="font-weight-600">{el.degree}</p>
-                                <div className="name-font-size-sm">{el.institution} | {el.endYear}</div>
-                               </p>
-                    })
-                    }</div>
+                <Education education={education}></Education>
                 <h3 className="font-weight-400 letter-spacing flex-center">{
                     currentGigs.map(currentGig => !isSmallScreen ?
                         <span key={currentGig.id}> {currentGig.title} at {currentGig.company}
