@@ -75,11 +75,20 @@
     justify-content: space-around;
 }
 
+.flex-section {
+    display: flex;
+}
+
 @media screen and (max-width: 800px) {
     .flex-space-around {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+    }
+
+    .flex-section {
+        display: flex;
+        flex-direction: column;
     }
   }
 

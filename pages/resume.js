@@ -38,7 +38,7 @@ export default function Resume() {
     return (
         <main className="outline">
             <p className="flex flex-end italic padding-top-md">Last Updated: {lastUpdatedDate}</p>
-            <section className="flex">
+            <section className="flex-section">
                 <section className="section-area">
                     <Image className="border-radius-50 margin-auto" src={profilePic} alt="Profile" width="120" height="120" />
                     <div aria-label="name">
