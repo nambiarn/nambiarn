@@ -8,6 +8,8 @@ import Education from "../components/Education";
 import ProfileIcons from "../components/ProfileIcons";
 import { commitDate } from '../generatedGitInfo.json';
 import Image from 'next/image';
+import { skills } from "../data/skills";
+import Skills from "../components/Skills";
 
 export default function Resume() {
     const [firstName] = useState("Nikhil");
@@ -45,9 +47,10 @@ export default function Resume() {
                         <div aria-label="first name" className="font-size-lg font-weight-600">{firstName}</div>
                         <div aria-label="last name" className="font-size-lg name font-weight-600">{lastName}</div>
                     </div>
-                    <div className="padding-top-sm font-weight-600">{title}</div>
+                    <div className="margin-top-sm font-weight-600">{title}</div>
                     <ProfileIcons />
                     <Education aria-label="Education credentials" education={education}></Education>
+                    <Skills aria-label="Skills" skills={skills}></Skills>
                 </section>
                 <span className="section-area">
                     <h3 className="width-md text-uppercase margin-top-minus-1">Experience</h3>

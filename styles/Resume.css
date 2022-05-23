@@ -4,7 +4,7 @@
 
 .outline {
     border-left: 1.5rem solid;
-    margin: -1rem 1.5rem;
+    margin: -2rem 1.5rem;
 }
 
 .border-bottom {
@@ -129,10 +129,19 @@
     font-size: 0.85rem;
 }
 
-.padding-top-sm {
+.margin-top-sm {
     margin-top: 1rem;
+}
+
+.margin-top-sm-md {
+    margin-top: 1.5rem;
 }
 
 .text-uppercase {
  text-transform: uppercase;
+}
+
+.list {
+    list-style-type: none;
+    margin-left: -2rem;
 }
