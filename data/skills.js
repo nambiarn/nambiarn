@@ -6,5 +6,6 @@ export const skills = [
         "Groovy on Grails",
         "SQL Databases",
         "MongoDB",
-        "Adobe Experience Manager"
+        "Adobe Experience Manager",
+        "PL/SQL"
 ];
