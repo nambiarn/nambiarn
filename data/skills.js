@@ -8,5 +8,6 @@ export const skills = [
         "MongoDB",
         "Adobe Experience Manager",
         "PL/SQL",
-        "Jenkins"
+        "Jenkins", 
+        "Java"
 ];
