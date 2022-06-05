@@ -37,7 +37,8 @@ export const experience = [
         isCurrent: false,
         content: ["Developed and architected customer facing ordering experience for 10,000 Business to Business customers of WWT",
         "Won a hackathon by presenting an idea to use a mobile app that scans QR codes to save time of support technicians by 60%.",
-        "Led a group of 15 developers to improve product architecture and assisted product manager with prioritization"]
+        "Led a group of 15 developers to improve product architecture and assisted product manager with prioritization",
+        "Built over 50 Supply Chain reports using Data Warehouses and Data Visualization techniques"]
     },
     {
         id: 4,
